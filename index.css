@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.LanguageSelector {
+  display: flex;
+  width: min-content;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.LanguageSelector__language {
+  padding: .5rem;
+  font-size: large;
+  background: 0;
+  border: 0;
+}
+
+.LanguageSelector__language:hover,
+.LanguageSelector__language__selected {
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+}
+
+.Main {
+  width: 25%;
+}
+
+@media (min-width: 600px) {
+  .Main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Main {
+    width: 50%;
+  }
+}
+
+.Main__message {
+  padding: 1rem;
+}
